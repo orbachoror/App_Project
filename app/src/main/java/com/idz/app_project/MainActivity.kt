@@ -1,6 +1,9 @@
 package com.idz.app_project
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,6 +24,14 @@ class MainActivity : AppCompatActivity() {
         // TODO: Step 2 - Navigate to AddStudentActivity
         // TODO: Step 1 - Create AddStudentLayout
         // TODO: Step 1 - Save Student
+
+        val addStudentButton: Button = findViewById(R.id.main_activity_add_student_button)
+        addStudentButton.setOnClickListener {
+        //TODO("Not Yet implement") }
+            val intent= Intent( this,AddStudentActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
+
 
